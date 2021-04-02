@@ -7,27 +7,27 @@ tags:
     - Proteus
     - Curriculum Integration 
 ---
-This is a tutorial about how to connect Proteus with Arduino IDE by serial port. Take BCD Adder for an instance.
+<font size=4>This is a tutorial about how to connect Proteus with Arduino IDE by serial port. Take BCD Adder for an instance.</font>
 
-1/ Install [virtual serial port driver](https://www.eltima.com/vspd-post-download.html) for creating virtual serial port pair.
+<font size=4>1/ Install [virtual serial port driver](https://www.eltima.com/vspd-post-download.html) for creating virtual serial port pair.</font>
 
-![fig.1 VSPD](https://img2020.cnblogs.com/blog/2305487/202104/2305487-20210402223151989-592870050.png)
+![fig.1 VSPD](1.png)
 
-![fig.2 Instrument Manager](https://img2020.cnblogs.com/blog/2305487/202104/2305487-20210402223204464-1400036519.png)
+![fig.2 Instrument Manager](2.png)
 
-2/ Pick "COMPIM" component in Proteus and setup baud rate and port number, so does "VIRTUAL TERMINAL".
+<font size=4>2/ Pick "COMPIM" component in Proteus and setup baud rate and port number, so does "VIRTUAL TERMINAL".</font>
 
-![fig.3 COMPIM](https://img2020.cnblogs.com/blog/2305487/202104/2305487-20210402223214302-1754038758.png)
+![fig.3 COMPIM](3.png)
 
-![fig.4 VIRTUAL TERMINAL](https://img2020.cnblogs.com/blog/2305487/202104/2305487-20210402223226537-1924063697.png)
+![fig.4 VIRTUAL TERMINAL](4.png)
 
-3/ Setup Serial Monitor in Arduino IDE.
+<font size=4>3/ Setup Serial Monitor in Arduino IDE.</font>
 
-![fig.5 Serial Monitor](https://img2020.cnblogs.com/blog/2305487/202104/2305487-20210402223236398-435003762.png)
+![fig.5 Serial Monitor](5.png)
 
-Now run simulation in Proteus and input addend in Serial Monitor in Arduino IDE. The data will be transmitted and received by COM1/COM2.
+<font size=4>Now run simulation in Proteus and input addend in Serial Monitor in Arduino IDE. The data will be transmitted and received by COM1/COM2.</font>
 
-![fig.6 Result](https://img2020.cnblogs.com/blog/2305487/202104/2305487-20210402223244150-1360627946.gif)
+![fig.6 Result](6.gif)
 
 ---
 
