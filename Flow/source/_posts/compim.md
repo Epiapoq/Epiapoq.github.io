@@ -7,21 +7,24 @@ tags:
     - Proteus
     - Curriculum Integration 
 ---
-<font size=4>This is a tutorial about how to connect Proteus with Arduino IDE by serial port. Take BCD Adder for an instance.</font>
 
-<font size=4>1/ Install [virtual serial port driver](https://www.eltima.com/vspd-post-download.html) for creating virtual serial port pair.</font>
+![](6.gif)
+
+<font size=4>This is a tutorial about how to connect Proteus with Arduino IDE by serial port. Take BCD Adder for an instance.</font><!-- more -->
+
+<font size=4>1. Install [virtual serial port driver](https://www.eltima.com/vspd-post-download.html) for creating virtual serial port pair.</font>
 
 ![fig.1 VSPD](1.png)
 
 ![fig.2 Instrument Manager](2.png)
 
-<font size=4>2/ Pick "COMPIM" component in Proteus and setup baud rate and port number, so does "VIRTUAL TERMINAL".</font>
+<font size=4>2. Pick "COMPIM" component in Proteus and setup baud rate and port number, so does "VIRTUAL TERMINAL".</font>
 
 ![fig.3 COMPIM](3.png)
 
 ![fig.4 VIRTUAL TERMINAL](4.png)
 
-<font size=4>3/ Setup Serial Monitor in Arduino IDE.</font>
+<font size=4>3. Setup Serial Monitor in Arduino IDE.</font>
 
 ![fig.5 Serial Monitor](5.png)
 
