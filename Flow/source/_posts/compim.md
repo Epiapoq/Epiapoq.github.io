@@ -5,6 +5,7 @@ author: Epiapoq
 tags: 
     - Arduino
     - Proteus
+    - Digital Design
     - Curriculum Integration 
 ---
 
