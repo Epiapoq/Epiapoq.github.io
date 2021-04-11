@@ -6,7 +6,7 @@
   <link href="http://epiapoq.github.io/atom.xml" rel="self"/>
   
   <link href="http://epiapoq.github.io/"/>
-  <updated>2021-04-11T09:59:40.008Z</updated>
+  <updated>2021-04-11T10:11:20.312Z</updated>
   <id>http://epiapoq.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>何为知识的完整性（续）</title>
+    <title>何为知识的完整性（续）——心流</title>
     <link href="http://epiapoq.github.io/2021/04/11/flow/"/>
     <id>http://epiapoq.github.io/2021/04/11/flow/</id>
     <published>2021-04-11T09:14:36.000Z</published>
-    <updated>2021-04-11T09:59:40.008Z</updated>
+    <updated>2021-04-11T10:11:20.312Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/2021/04/11/flow/flow.png"></p><span id="more"></span><p><font size="4">何以证明何种教学方式是符合教学对象认知结构的呢？问题的答案在于——能否产生FLOW（心流）。</font></p>]]></content>
     
@@ -76,13 +76,13 @@
     
     
     
-    <category term="Curriculum Integration" scheme="http://epiapoq.github.io/tags/Curriculum-Integration/"/>
-    
     <category term="Arduino" scheme="http://epiapoq.github.io/tags/Arduino/"/>
     
     <category term="Proteus" scheme="http://epiapoq.github.io/tags/Proteus/"/>
     
     <category term="Digital Design" scheme="http://epiapoq.github.io/tags/Digital-Design/"/>
+    
+    <category term="Curriculum Integration" scheme="http://epiapoq.github.io/tags/Curriculum-Integration/"/>
     
   </entry>
   
@@ -102,13 +102,13 @@
     
     
     
-    <category term="Curriculum Integration" scheme="http://epiapoq.github.io/tags/Curriculum-Integration/"/>
-    
     <category term="Arduino" scheme="http://epiapoq.github.io/tags/Arduino/"/>
     
     <category term="Proteus" scheme="http://epiapoq.github.io/tags/Proteus/"/>
     
     <category term="Digital Design" scheme="http://epiapoq.github.io/tags/Digital-Design/"/>
+    
+    <category term="Curriculum Integration" scheme="http://epiapoq.github.io/tags/Curriculum-Integration/"/>
     
   </entry>
   
