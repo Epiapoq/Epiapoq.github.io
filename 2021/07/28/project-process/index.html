@@ -16,8 +16,8 @@
 <p><font size="4">1. Step-MXO2和Arduino Uno可否直连？</font></p>
 <p><img src="/2021/07/28/project-process/interface.png"></p>
 <p><font size="4">短时间内或许不会互相伤害，但是逻辑上是不兼容的。这在数字电路课程中有过介绍。详见Digital Fundamentals 11th Edition by Thomas L. Floyd Chapter 15-1，不兼容的原因如下图（出自该书）所示。</font></p>
-<p><img src="/2021/07/28/project-process/3.3v.png"></p>
-<p><img src="/2021/07/28/project-process/5v.png"></p>
+<p><img src="/2021/07/28/project-process/3.3v.png" alt="3.3v CMOS"></p>
+<p><img src="/2021/07/28/project-process/5v.png" alt="5v TTL"></p>
 <p><font size="4">由上面两图可见，兼容和不兼容皆有。兼容的一面在于：3.3v的CMOS输出电平，逻辑0的电平范围是（0-0.4v），逻辑1的电平范围是（2.4-3.3v），与此同时5v的TTL输入电平，逻辑0的电平范围是（0-0.8v），逻辑1的电平范围是（2-5v）。由于后者包含前者，是故前者可以直接驱动后者，也就是说Step-mxo2输出引脚可直连Arduino Uno输入引脚。不兼容的一面在于：5v的TTL输出电平，逻辑0的电平范围是（0-0.4v），逻辑1的电平范围是（2.4-5v），与此同时3.3v的CMOS输入电平，逻辑0的电平范围是（0-0.8v），逻辑1的电平范围是（2-3.3v）。由于后者不能完全包含前者，是故前者不可以直接驱动后者，也就是说Arduino Uno输出引脚直连Step-mxo2输入引脚时，高电平不能被后者识别。</font></p>
 <p><font size="4">2. 上述理论放之四海而皆准吗？</font></p>
 <p><font size="4">上述理论完全来自于教科书上的阐述，但在工程实践中尽信书不如无书，按图索骥不可取。在这里，理论的作用在于直觉上的提醒，告诉我们直连很有可能是行不通的（事实上也确实行不通），而在实践中要靠芯片手册说话，我们需要一个明确的答案。</font></p>
@@ -25,8 +25,8 @@
 <p><font size="4">MachXO2: <a target="_blank" rel="noopener" href="https://www.latticesemi.com/-/media/LatticeSemi/Documents/DataSheets/MachXO23/FPGA-DS-02056-3-7-MachXO2-Family-Data-Sheet.ashx?document_id=38834">https://www.latticesemi.com/-/media/LatticeSemi/Documents/DataSheets/MachXO23/FPGA-DS-02056-3-7-MachXO2-Family-Data-Sheet.ashx?document_id=38834</a></font></p>
 <p><font size="4">Atmega328P: <a target="_blank" rel="noopener" href="http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf">http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf</a></font></p>
 <p><font size="4">找出与输入输出电平相关的描述（其实也不是那么容易能找出来的，平时需要多看手册），如下：</font></p>
-<p><img src="/2021/07/28/project-process/datasheet_3.3v.png"></p>
-<p><img src="/2021/07/28/project-process/datasheet_5v.png"></p>
+<p><img src="/2021/07/28/project-process/datasheet_3.3v.png" alt="MachXO2"></p>
+<p><img src="/2021/07/28/project-process/datasheet_5v.png" alt="ATmega328P"></p>
 <p><font size="4">显然这与上述教科书中的定义差异显著。但结论还是一样，不能完全兼容（具体计算过程参考上文，这里还有一点点瑕疵在于，datasheet中Machxo2输出1对应的电平最小值是VCCIO-0.4，即3.3v-0.4v=2.9v，而Atmega328P输入1的最小值是0.6VCC=3V，二者之间有0.1v的不匹配，但实操没有发现问题），进而需要思考如何设计电路实现匹配。</font></p>
 <p><font size="4">3. 从不匹配到匹配如何实现？</font></p>
 <p><font size="4">CMOS直接驱动TTL基本不存在问题，但反过来不行，不行的根本原因主要还是在于最大电压的不同，因此，如果能够将TTL最大电压5v降至3.3v，则很有可能解决不匹配的问题。最容易想到的办法就是电路原理里面学的串联分压，比如三个1kohm电阻串联，如下图所示（留学生上课时即采用此简易电路）。</font></p>
