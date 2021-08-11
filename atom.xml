@@ -6,7 +6,7 @@
   <link href="http://epiapoq.github.io/atom.xml" rel="self"/>
   
   <link href="http://epiapoq.github.io/"/>
-  <updated>2021-08-11T04:30:07.047Z</updated>
+  <updated>2021-08-11T04:43:40.722Z</updated>
   <id>http://epiapoq.github.io/</id>
   
   <author>
@@ -21,16 +21,12 @@
     <link href="http://epiapoq.github.io/2021/08/11/ToggleBits/"/>
     <id>http://epiapoq.github.io/2021/08/11/ToggleBits/</id>
     <published>2021-08-11T03:37:59.000Z</published>
-    <updated>2021-08-11T04:30:07.047Z</updated>
+    <updated>2021-08-11T04:43:40.722Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/2021/08/11/ToggleBits/main.png" alt="GPIO_ToggleBits"></p><p>When designing the Blinking experiment, I found that it’s not very convenient to drive the leds on/off in a brief way. The original method is to define a LEDx(ON/OFF) function to drive the leds on and off seperately, Because there is no toggle-bit function in STM32F10x_StdPeriph_Lib_V3.5.0. I guess that’s why in Fire’s manual, a self defined function is used.</p><p><img src="/2021/08/11/ToggleBits/fire's.png" alt="Fire&#39;s Method"></p><p>Finally I noticed that there is “GPIO_ToggleBits” Function in “stm32f4xx_gpio.c” of stm32f4_dsp_stdperiph_lib_v1.8.0. So I tried to transplant it into “stm32f10x_gpio.c” and “stm32f10x.h”, and it works. Method follows:</p><p><img src="/2021/08/11/ToggleBits/trans_1.png" alt="Function in .c"></p><p><img src="/2021/08/11/ToggleBits/trans_2.png" alt="Declaration in .h"></p><p><img src="/2021/08/11/ToggleBits/simulation.gif" alt="Simulation in Proteus"></p><p>Not real time running, just like always.¯\_(ツ)_/¯</p>]]></content>
+    <content type="html"><![CDATA[<p><img src="/2021/08/11/ToggleBits/main.png" alt="GPIO_ToggleBits"></p><span id="more"></span><p><font size="4">When designing the Blinking experiment, I found that it’s not very convenient to drive the leds on/off in a brief way. The original method is to define a LEDx(ON/OFF) function to drive the leds on and off seperately, Because there is no toggle-bit function in STM32F10x_StdPeriph_Lib_V3.5.0. I guess that’s why in Fire’s manual, a self defined function is used.</font></p><p><img src="/2021/08/11/ToggleBits/fire's.png" alt="Fire&#39;s Method"></p><p><font size="4">Finally I noticed that there is “GPIO_ToggleBits” Function in “stm32f4xx_gpio.c” of stm32f4_dsp_stdperiph_lib_v1.8.0. So I tried to transplant it into “stm32f10x_gpio.c” and “stm32f10x.h”, and it works. Method follows:</font></p><p><img src="/2021/08/11/ToggleBits/trans_1.png" alt="Function in stm32f10x_gpio.c"></p><p><img src="/2021/08/11/ToggleBits/trans_2.png" alt="Declaration in stm32f10x_gpio.h"></p><p><img src="/2021/08/11/ToggleBits/trans_2.png" alt="Declaration in bsp_led.h"></p><p><img src="/2021/08/11/ToggleBits/simulation.gif" alt="Simulation in Proteus"></p><p><font size="4">Not real time running, just like always.¯\_(ツ)_/¯</font></p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2021/08/11/ToggleBits/main.png&quot; alt=&quot;GPIO_ToggleBits&quot;&gt;&lt;/p&gt;
-&lt;p&gt;When designing the Blinking experiment, I found that it’s not ve</summary>
-      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2021/08/11/ToggleBits/main.png&quot; alt=&quot;GPIO_ToggleBits&quot;&gt;&lt;/p&gt;</summary>
     
     
     
