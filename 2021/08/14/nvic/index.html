@@ -28,7 +28,7 @@
 <p><font size="4">很多教程里对于外部中断的举例非常简略，用一个或多个按键作为外部中断触发信号，实现点灯功能，而按键之间并没有发生嵌套关系，因此对于优先级分组（Priority Group）、抢占优先级（Preemption Priority）、次优先级（Sub-Priority）等概念仅停留在拾人牙慧的层面，甚至存在从事过所谓项目开发后仍然理解错误的人且毁人不倦<a target="_blank" rel="noopener" href="https://blog.csdn.net/dahailinan/article/details/80693781">https://blog.csdn.net/dahailinan/article/details/80693781</a>。需要再次强调的是，优先级分组仅能设置一次，决定中断之间谁可以嵌套谁的是（且仅是）抢占优先级的高低（数字越小级别越高）。</font></p>
 <p><img src="/2021/08/14/nvic/PriorityGroupConfig_CM3.png" alt="Cortex-M3技术参考手册"></p>
 <p><img src="/2021/08/14/nvic/PriorityGroupConfig.png" alt="stm32固件库使用手册"></p>
-<p><font size="4">5.能都体现中断嵌套关系的按键中断实验</font></p>
+<p><font size="4">5.能够体现中断嵌套关系的按键中断实验</font></p>
 <p><font size="4">要对得起NVIC的’N’，我们至少需要两个按键，且二者的抢占优先级有高低之分。设计思路如下：</font></p>
 <p>i. 在没有中断发生时，LED1正常闪烁，LED2常亮</p>
 <p>ii. KEY1触发中断时，LED1被中断，LED2闪烁数次后常亮，LED1恢复正常闪烁</p>
