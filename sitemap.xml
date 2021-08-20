@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://epiapoq.github.io/2021/08/20/remapping/</loc>
+    
+    <lastmod>2021-08-20</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://epiapoq.github.io/2021/08/20/fritzing-dll-error/</loc>
     
     <lastmod>2021-08-20</lastmod>
@@ -152,6 +159,13 @@
   
   <url>
     <loc>http://epiapoq.github.io/tags/MDK/</loc>
+    <lastmod>2021-08-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://epiapoq.github.io/tags/Nucleo/</loc>
     <lastmod>2021-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
