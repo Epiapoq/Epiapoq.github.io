@@ -6,7 +6,7 @@
   <link href="http://epiapoq.github.io/atom.xml" rel="self"/>
   
   <link href="http://epiapoq.github.io/"/>
-  <updated>2021-08-20T04:41:45.674Z</updated>
+  <updated>2021-08-20T04:58:49.937Z</updated>
   <id>http://epiapoq.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How to fix &quot;reset and run&quot; failure in MDK</title>
+    <link href="http://epiapoq.github.io/2021/08/20/reset-run/"/>
+    <id>http://epiapoq.github.io/2021/08/20/reset-run/</id>
+    <published>2021-08-20T04:50:59.000Z</published>
+    <updated>2021-08-20T04:58:49.937Z</updated>
+    
+    <content type="html"><![CDATA[<p><font size="4">If failed, uncheck the “Enable” checkbox.</font></p><p> <img src="/2021/08/20/reset-run/Enable.png" alt="Uncheck"><br> <span id="more"></span></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;font size=&quot;4&quot;&gt;If failed, uncheck the “Enable” checkbox.&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt; &lt;img src=&quot;/2021/08/20/reset-run/Enable.png&quot; alt=&quot;Uncheck&quot;&gt;&lt;br&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="STM32F10xxx" scheme="http://epiapoq.github.io/tags/STM32F10xxx/"/>
+    
+    <category term="Embedded System" scheme="http://epiapoq.github.io/tags/Embedded-System/"/>
+    
+    <category term="MDK" scheme="http://epiapoq.github.io/tags/MDK/"/>
+    
+  </entry>
   
   <entry>
     <title>Fritzing&#39;s ssleay.dll error</title>
