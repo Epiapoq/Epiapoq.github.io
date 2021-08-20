@@ -6,6 +6,7 @@ tags:
     - Fritzing
     - STM32F10xxx
     - Embedded System
+    - Arduino
 ---
  
  ![modified adapter](adapter_modified.png)

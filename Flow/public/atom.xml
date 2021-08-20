@@ -6,7 +6,7 @@
   <link href="http://epiapoq.github.io/atom.xml" rel="self"/>
   
   <link href="http://epiapoq.github.io/"/>
-  <updated>2021-08-20T04:41:45.674Z</updated>
+  <updated>2021-08-20T09:25:07.760Z</updated>
   <id>http://epiapoq.github.io/</id>
   
   <author>
@@ -17,11 +17,59 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>How to generate 4 channel PWM at the same time on nucleo -- REMAP</title>
+    <link href="http://epiapoq.github.io/2021/08/20/remapping/"/>
+    <id>http://epiapoq.github.io/2021/08/20/remapping/</id>
+    <published>2021-08-20T05:01:37.000Z</published>
+    <updated>2021-08-20T09:25:07.760Z</updated>
+    
+    <content type="html"><![CDATA[<p><font size="4">When configuring TIM3 as a PWM generater, CH1-CH4 are PA6, PA7， PB0, PB1. </font></p><p><img src="/2021/08/20/remapping/4_channels.png" alt="four GPIO pins for 4 channels"></p><span id="more"></span><p><font size="4">Eventhough all the above four pins have been lead out on nucleo, 0 ohms resistors of PA6 and PA7 remain unsoldered by default. We must find another way to generate the other 2 PWM if we don’t want to solder SB36 and SB39.</font> </p><p><img src="/2021/08/20/remapping/connections.png" alt="PA6 and PA7 connected with SB36 and SB39"></p><p><img src="/2021/08/20/remapping/unsoldered.png" alt="SB36 and SB37 unsoldered with 0 ohms resistor by default"></p><p><font size="4">Like FPGA, some pins(not all) of stm32f10x can be remapped to each other. We can use “fullremap” to remap CH1-CH4 to PC6-PC9 or “partialremap”, only PA6-PA7 to PB4-PB5.(I also tried the latter, PB5 worked but PB4 still didn’t. Don’t know why.)</font> </p><p><img src="/2021/08/20/remapping/table.png" alt="TIM3_REMAP Table"></p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);</span><br><span class="line">RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE); <span class="comment">// Enable both GPIOx and AFIO Clock before remapping</span></span><br><span class="line">GPIO_PinRemapConfig(GPIO_FullRemap_TIM3, ENABLE); <span class="comment">// FullRemap to PC6, PC7, PC8, PC9</span></span><br></pre></td></tr></table></figure><p><font size="4">Finally I got all PWM, but still don’t understand why PB4 malfunctions. Maybe need read UM1724 again and again. Sugar cane is not sweet at both ends. Now that we enjoyed the convennience of finished hardware, we must accept the limitition of it and try our best to read the user’s manual and rack our brains to find an alternative method.</font> </p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;font size=&quot;4&quot;&gt;When configuring TIM3 as a PWM generater, CH1-CH4 are PA6, PA7， PB0, PB1. &lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2021/08/20/remapping/4_channels.png&quot; alt=&quot;four GPIO pins for 4 channels&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="STM32F10xxx" scheme="http://epiapoq.github.io/tags/STM32F10xxx/"/>
+    
+    <category term="Embedded System" scheme="http://epiapoq.github.io/tags/Embedded-System/"/>
+    
+    <category term="Nucleo" scheme="http://epiapoq.github.io/tags/Nucleo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>How to fix &quot;reset and run&quot; failure in MDK</title>
+    <link href="http://epiapoq.github.io/2021/08/20/reset-run/"/>
+    <id>http://epiapoq.github.io/2021/08/20/reset-run/</id>
+    <published>2021-08-20T04:50:59.000Z</published>
+    <updated>2021-08-20T04:58:49.937Z</updated>
+    
+    <content type="html"><![CDATA[<p><font size="4">If failed, uncheck the “Enable” checkbox.</font></p><p> <img src="/2021/08/20/reset-run/Enable.png" alt="Uncheck"><br> <span id="more"></span></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;font size=&quot;4&quot;&gt;If failed, uncheck the “Enable” checkbox.&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt; &lt;img src=&quot;/2021/08/20/reset-run/Enable.png&quot; alt=&quot;Uncheck&quot;&gt;&lt;br&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="STM32F10xxx" scheme="http://epiapoq.github.io/tags/STM32F10xxx/"/>
+    
+    <category term="Embedded System" scheme="http://epiapoq.github.io/tags/Embedded-System/"/>
+    
+    <category term="MDK" scheme="http://epiapoq.github.io/tags/MDK/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Fritzing&#39;s ssleay.dll error</title>
     <link href="http://epiapoq.github.io/2021/08/20/fritzing-dll-error/"/>
     <id>http://epiapoq.github.io/2021/08/20/fritzing-dll-error/</id>
     <published>2021-08-20T04:03:13.000Z</published>
-    <updated>2021-08-20T04:41:45.674Z</updated>
+    <updated>2021-08-20T04:59:44.220Z</updated>
     
     <content type="html"><![CDATA[<p> <img src="/2021/08/20/fritzing-dll-error/adapter_modified.png" alt="modified adapter"><br> <span id="more"></span></p><p> <font size="4">When designing “pulse width measurement” lab of stm3210x, I used a ttl-to-usb module to connect mcu with pc. The module is the same one which is used to upload program to a diy arduino board(designed by one of my hard working student). The core chip of the module is CH340G. But same as the similar pruducts on market, this mudule alse dose not lead out a reset pin. Say, when uploading, we must press the reset button on the Arduino board at the proper instant of time. NOT CONVENIENT. So I try to draw a modified circuit in fritzing to solve the problem.</font></p><p><img src="/2021/08/20/fritzing-dll-error/adapter.png" alt="the only one adapter(CH340G) supports reset(DTR pin) I&#39;ve ever seen, but can&#39;t find in China"></p><p><font size="4">But when I was opening fritzing, popuped an error.</font></p><p><img src="/2021/08/20/fritzing-dll-error/error.png" alt="ssleay.dll error"></p><p><font size="4">Then I found the path in the error dialogue box, and copied “ssleay32.dll” and “libeay32.dll” to fritzing’s folder. Solved.</font></p>]]></content>
     
@@ -30,6 +78,8 @@
     
     
     
+    
+    <category term="Arduino" scheme="http://epiapoq.github.io/tags/Arduino/"/>
     
     <category term="STM32F10xxx" scheme="http://epiapoq.github.io/tags/STM32F10xxx/"/>
     
