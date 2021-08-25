@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://epiapoq.github.io/2021/08/25/at24c32/</loc>
+    
+    <lastmod>2021-08-25</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://epiapoq.github.io/2021/08/14/nvic/</loc>
     
     <lastmod>2021-08-21</lastmod>
@@ -95,7 +102,7 @@
 
   <url>
     <loc>http://epiapoq.github.io/</loc>
-    <lastmod>2021-08-21</lastmod>
+    <lastmod>2021-08-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -103,70 +110,77 @@
   
   <url>
     <loc>http://epiapoq.github.io/tags/Arduino/</loc>
-    <lastmod>2021-08-21</lastmod>
+    <lastmod>2021-08-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://epiapoq.github.io/tags/Proteus/</loc>
-    <lastmod>2021-08-21</lastmod>
+    <lastmod>2021-08-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://epiapoq.github.io/tags/Digital-Design/</loc>
-    <lastmod>2021-08-21</lastmod>
+    <lastmod>2021-08-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://epiapoq.github.io/tags/Curriculum-Integration/</loc>
-    <lastmod>2021-08-21</lastmod>
+    <lastmod>2021-08-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://epiapoq.github.io/tags/Pro-3/</loc>
-    <lastmod>2021-08-21</lastmod>
+    <lastmod>2021-08-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://epiapoq.github.io/tags/STM32F10xxx/</loc>
-    <lastmod>2021-08-21</lastmod>
+    <lastmod>2021-08-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://epiapoq.github.io/tags/Embedded-System/</loc>
-    <lastmod>2021-08-21</lastmod>
+    <lastmod>2021-08-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://epiapoq.github.io/tags/Fritzing/</loc>
-    <lastmod>2021-08-21</lastmod>
+    <lastmod>2021-08-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://epiapoq.github.io/tags/MDK/</loc>
-    <lastmod>2021-08-21</lastmod>
+    <lastmod>2021-08-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://epiapoq.github.io/tags/Nucleo/</loc>
-    <lastmod>2021-08-21</lastmod>
+    <lastmod>2021-08-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://epiapoq.github.io/tags/I2C/</loc>
+    <lastmod>2021-08-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
