@@ -6,7 +6,7 @@
   <link href="http://epiapoq.github.io/atom.xml" rel="self"/>
   
   <link href="http://epiapoq.github.io/"/>
-  <updated>2021-08-25T16:43:07.842Z</updated>
+  <updated>2021-10-19T07:23:02.400Z</updated>
   <id>http://epiapoq.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux C Programming -- nano editor</title>
+    <link href="http://epiapoq.github.io/2021/10/19/linux-c-nano/"/>
+    <id>http://epiapoq.github.io/2021/10/19/linux-c-nano/</id>
+    <published>2021-10-19T05:02:51.000Z</published>
+    <updated>2021-10-19T07:23:02.400Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2021/10/19/linux-c-nano/nano.png" alt="nano editor"><br> <span id="more"></span></p> <font size="4">  To program using C in linux, first of all, install Ubuntu in Windows. (https://docs.microsoft.com/zh-cn/windows/wsl/install-manual)<p>Then replace with domestic mirror source.</p><p>Next, install “gdb”.</p><p><img src="/2021/10/19/linux-c-nano/gdb.png" alt="Debug using gdb"></p><p>Last change the default settings of “nano” editor.</p><p>i. change tabsize: edit “nanorc” file (.\rootfs\etc\nanorc)</p><p><img src="/2021/10/19/linux-c-nano/nanorc.png" alt="change tabsize from 8 to 4"></p><p>ii. change color of comment (.\rootfs\usr\share\nano\c.nanorc)</p><p><img src="/2021/10/19/linux-c-nano/c.nanorc.png" alt="change color of comment"></p><p>Recommend two books:</p><p>A good Introductory book of C (linux)</p><p><img src="/2021/10/19/linux-c-nano/linux_c.png" alt="Linux C编程一站式学习"></p><p>Another good Introductory book of C (8051, but not only for 8051)</p><p><img src="/2021/10/19/linux-c-nano/8051_c.png" alt="时间触发嵌入式系统设计模式"></p></font>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2021/10/19/linux-c-nano/nano.png&quot; alt=&quot;nano editor&quot;&gt;&lt;br&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="Linux" scheme="http://epiapoq.github.io/tags/Linux/"/>
+    
+    <category term="C Programming" scheme="http://epiapoq.github.io/tags/C-Programming/"/>
+    
+  </entry>
   
   <entry>
     <title>stm32f10x通过i2c读写at24c32</title>
