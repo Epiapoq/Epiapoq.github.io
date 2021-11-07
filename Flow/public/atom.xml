@@ -6,7 +6,7 @@
   <link href="http://epiapoq.github.io/atom.xml" rel="self"/>
   
   <link href="http://epiapoq.github.io/"/>
-  <updated>2021-10-19T07:23:02.400Z</updated>
+  <updated>2021-11-06T15:55:00.692Z</updated>
   <id>http://epiapoq.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何更改nano的默认字体（How to set nano default font）</title>
+    <link href="http://epiapoq.github.io/2021/11/06/nano-font/"/>
+    <id>http://epiapoq.github.io/2021/11/06/nano-font/</id>
+    <published>2021-11-06T15:35:18.000Z</published>
+    <updated>2021-11-06T15:55:00.692Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/2021/11/06/nano-font/regedit.png" alt="Create CodePage"></p><p><font size="4">在Linux Shell（或PowerShell、cmd）中启动nano，即便更改了字体的默认值（见下图），在重新打开后仍旧会回到系统初始设定，要解决这个问题需要更改注册表，即在注册表中上图所在位置添加CodePage。(参考：<a href="https://zhuanlan.zhihu.com/p/265192449">https://zhuanlan.zhihu.com/p/265192449</a>)</font></p><p><img src="/2021/11/06/nano-font/attributes.png" alt="Attribute Setting"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/2021/11/06/nano-font/regedit.png&quot; alt=&quot;Create CodePage&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font size=&quot;4&quot;&gt;在Linux Shell（或PowerShell、cmd）中启动nano，即便更改了字体的默认</summary>
+      
+    
+    
+    
+    
+    <category term="Linux" scheme="http://epiapoq.github.io/tags/Linux/"/>
+    
+    <category term="C Programming" scheme="http://epiapoq.github.io/tags/C-Programming/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux C Programming -- nano editor</title>
