@@ -6,7 +6,7 @@
   <link href="http://epiapoq.github.io/atom.xml" rel="self"/>
   
   <link href="http://epiapoq.github.io/"/>
-  <updated>2021-11-06T15:55:00.692Z</updated>
+  <updated>2021-11-20T17:49:30.149Z</updated>
   <id>http://epiapoq.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>电路和电子学大纲见微</title>
+    <link href="http://epiapoq.github.io/2021/11/21/glimpse/"/>
+    <id>http://epiapoq.github.io/2021/11/21/glimpse/</id>
+    <published>2021-11-20T17:22:27.000Z</published>
+    <updated>2021-11-20T17:49:30.149Z</updated>
+    
+    <content type="html"><![CDATA[<p><font size="4">理论部分</font></p><p><img src="/2021/11/21/glimpse/theory_1.png"></p><p><img src="/2021/11/21/glimpse/theory_2.png"></p><p><img src="/2021/11/21/glimpse/theory_3.png"></p><p><font size="4">实验部分</font></p><p><img src="/2021/11/21/glimpse/lab_1.png"></p><p><img src="/2021/11/21/glimpse/lab_2.png"></p><p><img src="/2021/11/21/glimpse/lab_3.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;font size=&quot;4&quot;&gt;理论部分&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2021/11/21/glimpse/theory_1.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2021/11/21/glimpse/theory_2.png&quot;&gt;&lt;/p&gt;
+&lt;p</summary>
+      
+    
+    
+    
+    
+    <category term="Curriculum Integration" scheme="http://epiapoq.github.io/tags/Curriculum-Integration/"/>
+    
+  </entry>
   
   <entry>
     <title>如何更改nano的默认字体（How to set nano default font）</title>
